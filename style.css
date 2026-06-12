@@ -1,0 +1,320 @@
+html{
+scroll-behavior:smooth;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f5f7fa;
+color:#333;
+}
+
+nav{
+background:#0a2540;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+.logo{
+background:#0078ff;
+color:white;
+padding:10px 15px;
+border-radius:10px;
+font-weight:bold;
+font-size:24px;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+
+background:
+linear-gradient(
+rgba(10,37,64,0.85),
+rgba(10,37,64,0.85)
+),
+url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+
+background-size:cover;
+background-position:center;
+
+color:white;
+
+padding:20px;
+}
+
+.hero h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero p{
+max-width:700px;
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#0078ff;
+color:white;
+padding:15px 30px;
+text-decoration:none;
+border-radius:8px;
+}
+
+.services-preview{
+padding:80px 20px;
+text-align:center;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.card{
+background:white;
+padding:30px;
+width:300px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.why-us{
+padding:80px 20px;
+text-align:center;
+}
+
+.why-us ul{
+list-style:none;
+}
+
+.why-us li{
+margin:15px 0;
+font-size:20px;
+}
+
+footer{
+background:#0a2540;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.page{
+padding:80px 10%;
+min-height:80vh;
+}
+
+.page h1{
+margin-bottom:30px;
+text-align:center;
+font-size:42px;
+}
+
+.page p{
+font-size:18px;
+line-height:1.8;
+margin-bottom:20px;
+}
+
+.contact-form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+padding:15px;
+font-size:16px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+.contact-form textarea{
+height:150px;
+resize:none;
+}
+
+.contact-form button{
+padding:15px;
+border:none;
+background:#0078ff;
+color:white;
+font-size:18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card{
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.btn:hover{
+opacity:0.9;
+}
+
+@media(max-width:768px){
+
+nav{
+flex-direction:column;
+}
+
+nav ul{
+margin-top:15px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.hero h1{
+font-size:36px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+}
+
+.stats{
+display:flex;
+justify-content:center;
+gap:50px;
+padding:60px 20px;
+flex-wrap:wrap;
+}
+
+.stat{
+text-align:center;
+}
+
+.stat h2{
+font-size:50px;
+color:#0078ff;
+}
+
+.stat p{
+font-size:18px;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:15px;
+}
+
+.cta{
+background:#0a2540;
+color:white;
+text-align:center;
+padding:80px 20px;
+}
+
+.cta h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.cta p{
+margin-bottom:30px;
+}
+
+.theme-btn{
+position:fixed;
+top:20px;
+right:20px;
+padding:10px;
+cursor:pointer;
+z-index:1000;
+}
+
+.dark{
+background:#121212;
+color:white;
+}
+
+.dark .card{
+background:#1e1e1e;
+color:white;
+}
+
+#loader{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:9999;
+}
+
+.spinner{
+width:60px;
+height:60px;
+border:6px solid #ddd;
+border-top:6px solid #0078ff;
+border-radius:50%;
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+100%{
+transform:rotate(360deg);
+}
+}
